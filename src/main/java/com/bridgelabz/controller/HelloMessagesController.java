@@ -25,4 +25,9 @@ public class HelloMessagesController {
     public String sayHello4(@RequestBody UserDto userDto){
         return userDto.toString();
     }
+
+    @PutMapping("/put/{firstname}")
+    public String sayHello5(@PathVariable String firstname, @RequestParam String lastname){
+        return "Hello "+firstname+" "+lastname;
+    }
 }
