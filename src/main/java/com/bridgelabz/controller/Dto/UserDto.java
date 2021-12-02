@@ -1,17 +1,15 @@
 package com.bridgelabz.controller.Dto;
 
+/**
+ * Purpose: This is a pojo class which is used to for generating objects.
+ *
+ * @author Ashwith
+ * @since 1/12/21
+ */
 public class UserDto {
 
     String firstname;
     String lastname;
-
-    @Override
-    public String toString() {
-        return "UserDto{" +
-                "firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                '}';
-    }
 
     public String getFirstname() {
         return firstname;
